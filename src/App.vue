@@ -31,7 +31,6 @@ export default {
     }
   },
   mounted() {
-
     this.getMessageHistory();
       window.addEventListener('storage', () => {
         this.getMessageHistory();

@@ -28,13 +28,14 @@
             }
         },
         mounted() {
-            this.stored   = getLocalStorage('storage');
+            this.stored   = getLocalStorage('storage') || [];
             this.userName = getSessionStorage('userName') || '';
-            this.userId   = getSessionStorage('userId');
 
             if (!getSessionStorage('userId')) {
                 this.userId = this.generateUserId();
                 sessionStorage.setItem('userId', this.userId);
+            } else {
+                this.userId = getSessionStorage('userId');
             }
         },
         methods: {

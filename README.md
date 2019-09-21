@@ -1,10 +1,16 @@
 # Messenger
 
 ## Project setup
+Для запуска пректа необходимо выполнить команды:
+
 ```
 yarn install
 yarn run serve
 ```
+
+После проект будет доступен по хосту: http://localhost:8080/
+
+
 
 ### Compiles and minifies for production
 ```
